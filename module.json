@@ -1,7 +1,7 @@
 {
     "name": "camera-control",
     "author": "Caali",
-    "description": "Configure or disable camera shaking effects. Change camera FOV (field of view) and distance. Settings accessible by typing `/toolbox camera` in chat.",
+    "description": "Configure o deshabilite los efectos de movimiento de la cámara. Cambie el FOV (campo de visión) y la distancia de la cámara. Configuraciones accesibles al escribir `/toolbox camera` en el chat.",
     "version": "1.0",
     "options": {
         "cliName": "Camera Control",
@@ -10,6 +10,7 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/tera-toolbox-mods/camera-control/master/"],
-    "conflicts": ["shaker"]
+    "servers": ["https://raw.githubusercontent.com/Loliconera/camera-control-spanish/master/"],
+    "conflicts": ["shaker"],
+    "disableAutoUpdate": false
 }

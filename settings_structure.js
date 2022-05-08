@@ -1,12 +1,12 @@
 module.exports = [
     {
         "key": "shakeEnabled",
-        "name": "Enable camera shaking",
+        "name": "Habilitar el movimiento de la cámara",
         "type": "bool"
     },
     {
         "key": "shakePower",
-        "name": "Shaking power multiplier (if enabled)",
+        "name": "Multiplicador de potencia de movimiento (si está habilitado)",
         "type": "number",
         "min": 0.0,
         "max": 100.0,
@@ -14,7 +14,7 @@ module.exports = [
     },
     {
         "key": "shakeSpeed",
-        "name": "Shaking speed multiplier (if enabled)",
+        "name": "Multiplicador de velocidad de movimiento (si está habilitado)",
         "type": "number",
         "min": 0.0,
         "max": 100.0,
@@ -22,12 +22,12 @@ module.exports = [
     },
     {
         "key": "fovEnabled",
-        "name": "Enable FOV (field of view) override",
+        "name": "Habilitar anulación de FOV (campo de visión)",
         "type": "bool"
     },
     {
         "key": "fovValue",
-        "name": "FOV override value (if enabled)",
+        "name": "Valor de anulación de FOV (si está habilitado)",
         "type": "number",
         "min": 30.0,
         "max": 120.0,
@@ -35,12 +35,12 @@ module.exports = [
     },
     {
         "key": "distanceEnabled",
-        "name": "Enable distance override",
+        "name": "Habilitar anulación de distancia",
         "type": "bool"
     },
     {
         "key": "distanceValue",
-        "name": "Distance override value (if enabled)",
+        "name": "Valor de anulación de distancia (si está habilitado)",
         "type": "number",
         "min": 10.0,
         "max": 1000.0,

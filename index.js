@@ -30,17 +30,17 @@ exports.NetworkMod = function(mod) {
             mod.settings.shakePower = Number(shakePower) || 1.0;
             mod.settings.shakeSpeed = Number(shakeSpeed) || 1.0;
 
-            mod.command.message(`Shaking ${mod.settings.shakeEnabled ? 'enabled' : 'disabled'}!`);
+            mod.command.message(`Movimiento ${mod.settings.shakeEnabled ? 'activado' : 'desactivado'}!`);
             apply();
         },
         fov(value) {
             if (value === 'disable') {
                 mod.settings.fovEnabled = false;
-                mod.command.message(`FOV disabled!`);
+                mod.command.message(`¡FOV deshabilitado!`);
             } else {
                 mod.settings.fovEnabled = true;
                 mod.settings.fovValue = Number(value) || 71.0;
-                mod.command.message(`FOV set to ${mod.settings.fovValue}!`);
+                mod.command.message(`FOV establecido en ${mod.settings.fovValue}!`);
             }
 
             apply();
@@ -48,11 +48,11 @@ exports.NetworkMod = function(mod) {
         distance(value) {
             if (value === 'disable') {
                 mod.settings.distanceEnabled = false;
-                mod.command.message(`Distance disabled!`);
+                mod.command.message(`¡Distancia desactivada!`);
             } else {
                 mod.settings.distanceEnabled = true;
                 mod.settings.distanceValue = Number(value) || 170.0;
-                mod.command.message(`Distance set to ${mod.settings.distanceValue}!`);
+                mod.command.message(`Distancia establecida en ${mod.settings.distanceValue}!`);
             }
 
             apply();
