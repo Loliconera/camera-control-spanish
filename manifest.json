@@ -1,13 +1,17 @@
 {
     "files": {
         "README.md": "921152a16517cb2619cad3673a8961aa0ac5b2465571b495e9afcb16b0861d93",
-        "index.js": "bcc1ae7614981e3f554de69323f2dd9fd828e864861c1d3761a219119c727bd7",
+        "index.js": "c6be1f01f7ea12f2674e93e40158b1924816d50b6140b1df1f867b6848d22190",
         "module.json": "1c62a10c50ead0eb255ad3452373cd4dcbdb8c7cf0bc3ebf9c3786734a2e77f2",
         "settings_migrator.js": "a43d4169bf88085644783fecddcd9efe5ac7a6c5344eb7f1230ae6f2c4d2ffb9",
         "settings_structure.js": "c173d46ebf7cae707d01f627d6ace26113dba98e165c04fadc0d06fb49a6456b"
     },
     "defs": {
+        "C_PLAYER_FLYING_LOCATION": 4,
+        "S_DEAD_LOCATION": "event",
         "S_DUNGEON_CAMERA_SET": [1,"event"],
-        "S_STEER_DEBUG_COMMAND": [1,"event"]
+        "S_SPAWN_ME": "event",
+        "S_STEER_DEBUG_COMMAND": [1,"event"],
+        "S_UNMOUNT_VEHICLE": 2
     }
 }

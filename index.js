@@ -9,7 +9,21 @@ exports.NetworkMod = function(mod) {
             mod.send('S_DUNGEON_CAMERA_SET', 1, { enabled: true, default: mod.settings.distanceValue, max: mod.settings.distanceValue });
     }
 
-    mod.game.on('leave_loading_screen', () => mod.setTimeout(() => apply(), 1000));
+    mod.hook('S_SPAWN_ME', 'event', () => { mod.setTimeout(() => apply(), 2000) });
+    mod.hook('S_DEAD_LOCATION', 'event', () => { mod.setTimeout(() => apply(), 1) });
+    mod.hook('C_PLAYER_FLYING_LOCATION', 4, ({ type }) => { 
+        switch (type) {
+            case 8:
+                mod.setTimeout(() => apply(), 10);
+                break;
+            default:
+                mod.setTimeout(() => apply(), 1);
+                break;
+        }
+    });
+    mod.hook('S_UNMOUNT_VEHICLE', 2, event => {
+        if(mod.game.me.gameId === event.gameId) mod.setTimeout(() => apply(), 1);
+    });
 
     mod.hook("S_STEER_DEBUG_COMMAND", "event", () => {
         if(mod.settings.fovEnabled) return false;
